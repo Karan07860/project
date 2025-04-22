@@ -1,24 +1,40 @@
+# Rock Paper Scissors Game - Design Principles (In My Own Words)
 
-# Rock Paper Scissors Game 
+I created a simple Rock Paper Scissors game using Python. In this game, the user plays against the computer. The computer randomly chooses one of the three options – rock, paper, or scissors – and the user inputs their choice. Then, the game checks who wins. While writing this code, I tried to follow several important design principles. Here’s how I used them:
 
-## What I Learned
+---
 
-- How to create a Python class to organize code (RockPaperScissors).
-- How to use the __init__() method to initialize data (like setting up choices).
-- How to use unctions inside a class to perform actions (play() method).
-- How to use if-elif-else conditions to decide who wins.
-- How to use the random module to let the computer pick a random option.
-- How to handle user input with input() and display results using print().
-- The importance of correct syntax, especially __init__ (not _init_).
+## 1. KISS (Keep It Simple, Stupid)
 
-## ▶️ How to Run the Game
+I kept the code as simple as possible. I used only one class and one main method to run the game. The logic is clear, and everything is easy to understand. This way, if someone else reads my code, they won’t get confused.
 
-1. Open your Python editor (like VS Code, IDLE, or any text editor).
-2. Paste the full game code into a new .py file. Example: rockpaperscissor.py
-3. Save the file.
-4. Open a terminal or command prompt.
-5. Navigate to the folder where your file is saved.
-6. Run the program using:
+---
 
-7. Follow the prompt and enter `rock`, `paper`, or `scissors` to play!
+## 2. DRY (Don’t Repeat Yourself)
+
+I used a single set of conditions to check who wins. Instead of writing multiple “if-else” statements again and again, I wrote all the win conditions in one place. This helped me avoid repeating the same logic.
+
+---
+
+## 3. Single Responsibility Principle
+
+My class RockPaperScissors is only responsible for one thing – the game. It stores the possible choices and runs the game logic. It doesn’t handle anything else like saving scores or making menus. That’s how I made sure this class has only one job.
+
+---
+
+## 4. Separation of Concerns (SoC)
+
+Inside the play() method, I handled each part of the game step-by-step:
+- First, I asked the user to choose.
+- Then, the computer randomly chose.
+- After that, the game logic checked who won.
+- Finally, I printed the result.
+
+Each part is clearly separated, which makes the code neat and easy to follow.
+
+---
+
+## 5. Clean Code Over Clever Code
+
+I didn’t try to be too clever. I used simple variable names like user_choice and computer_choice, and I wrote code that’s easy to read. This makes it easier for me and others to understand and fix the code later.
 
