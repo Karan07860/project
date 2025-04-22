@@ -108,3 +108,13 @@ I used clear and meaningful names for everything:
 - player for the turtle you move.
 - target for the red circle.
 - move_up, move_down, etc., for each direction function.
+-
+- ## Conclusion
+
+By using these design principles, I was able to write Python code that is:
+- Simple
+- Easy to read
+- Easy to change later
+- Less likely to have bugs
+
+These principles are helpful not just for small games, but also for bigger projects I might work on in the future. They help me become a better programmer by encouraging clean and organized thinking while writing code.
